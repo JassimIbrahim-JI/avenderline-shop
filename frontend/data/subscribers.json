@@ -1,0 +1,20 @@
+[
+  {
+    "email": "patron.client@qatar.qa",
+    "subscribedAt": "2026-09-15T13:53:40.586Z",
+    "source": "atelier_concierge",
+    "status": "Active"
+  },
+  {
+    "email": "couture.lover@doha.com",
+    "subscribedAt": "2026-09-18T13:53:40.587Z",
+    "source": "footer",
+    "status": "Active"
+  },
+  {
+    "email": "sarah.almansoori@doha.qa",
+    "subscribedAt": "2026-09-20T13:53:42.661Z",
+    "source": "storefront_footer",
+    "status": "Active"
+  }
+]

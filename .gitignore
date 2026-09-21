@@ -1,0 +1,43 @@
+# .NET build outputs
+bin/
+obj/
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio / Rider
+.vs/
+.idea/
+*.user
+*.suo
+
+# Test results
+TestResults/
+*.trx
+*.coverage
+
+# Environment & secrets
+.env
+appsettings.Production.json
+*.local.json
+
+# Node (frontend)
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/dist/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local SQLite databases
+*.db
+*.db-shm
+*.db-wal
+
+# Editor configs / scratch
+.vscode/
+scratch_run.txt

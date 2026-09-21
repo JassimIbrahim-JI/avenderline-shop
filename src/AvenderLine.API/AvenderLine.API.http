@@ -1,0 +1,6 @@
+@AvenderLine.API_HostAddress = http://localhost:5246
+
+GET {{AvenderLine.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

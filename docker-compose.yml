@@ -1,0 +1,45 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: avenderline-db
+    environment:
+      POSTGRES_USER: avenderline
+      POSTGRES_PASSWORD: avenderline
+      POSTGRES_DB: avenderline
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U avenderline"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  api:
+    build:
+      context: .
+      dockerfile: src/AvenderLine.API/Dockerfile
+    container_name: avenderline-api
+    environment:
+      ConnectionStrings__DefaultConnection: "Host=db;Port=5432;Database=avenderline;Username=avenderline;Password=avenderline"
+      Jwt__Key: "${JWT_KEY:-change-me-in-production-32-characters-minimum!!}"
+      Jwt__Issuer: "AvenderLine"
+      Jwt__Audience: "AvenderLine.API"
+      Payment__Provider: "Stripe"
+      Stripe__SecretKey: "${STRIPE_SECRET_KEY:-}"
+      Stripe__WebhookSecret: "${STRIPE_WEBHOOK_SECRET:-}"
+      Tap__SecretKey: "${TAP_SECRET_KEY:-}"
+      OpenAI__ApiKey: "${OPENAI_API_KEY:-}"
+      OpenAI__Model: "gpt-4o-mini"
+      Cors__Origins__0: "http://localhost:3000"
+    ports:
+      - "8080:8080"
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  pgdata:

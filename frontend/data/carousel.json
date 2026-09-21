@@ -1,0 +1,41 @@
+[
+  {
+    "id": 2,
+    "imageUrl": "https://images.unsplash.com/photo-1724412665971-114bd351a42d?auto=format&fit=crop&w=2400&q=90",
+    "tag": "HERITAGE ROYALTY · MAISON BISHT",
+    "tagAr": "أصالة ملكية · بشت الدار",
+    "title": "GILDED WITH PURE GOLD KASAB",
+    "titleAr": "مطرزة بقصب الذهب الخالص",
+    "ctaText": "SHOP THE BISHT EDIT",
+    "ctaTextAr": "تسوقي تشكيلة البشوت",
+    "ctaLink": "/collections/classics",
+    "objectPosition": "center 10%",
+    "active": true
+  },
+  {
+    "id": 1,
+    "imageUrl": "https://images.unsplash.com/photo-1762605135376-ae5af70a5628?auto=format&fit=crop&w=2400&q=90",
+    "tag": "HAUTE COUTURE · SUMMER 2026",
+    "tagAr": "هوت كوتور · صيف 2026",
+    "title": "TIMELESS COUTURE ELEGANCE",
+    "titleAr": "أناقة الكوتور الخالدة",
+    "ctaText": "EXPLORE THE NEW COLLECTION",
+    "ctaTextAr": "اكتشفي التشكيلة الجديدة",
+    "ctaLink": "#featured",
+    "objectPosition": "center center",
+    "active": true
+  },
+  {
+    "id": 3,
+    "imageUrl": "https://images.unsplash.com/photo-1762605135326-5c4bcc5ef006?auto=format&fit=crop&w=2400&q=90",
+    "tag": "JAPANESE SILK · BESPOKE DRAPES",
+    "tagAr": "حرير ياباني · تفصيل خاص",
+    "title": "FLUID SILHOUETTES CRAFTED IN DOHA",
+    "titleAr": "قصات انسيابية حيكت في الدوحة",
+    "ctaText": "DISCOVER THE ATELIER",
+    "ctaTextAr": "اكتشفي إبداعات المشغل",
+    "ctaLink": "/collections/women",
+    "objectPosition": "center 20%",
+    "active": true
+  }
+]

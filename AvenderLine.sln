@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E4C778B7-FD1B-4DEA-BBC9-B11835E6D88F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvenderLine.Domain", "src\AvenderLine.Domain\AvenderLine.Domain.csproj", "{80986988-5F67-4964-B726-4B856C56D698}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvenderLine.Application", "src\AvenderLine.Application\AvenderLine.Application.csproj", "{F34618C5-8300-474A-A1E0-31AE97F0EA84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvenderLine.Infrastructure", "src\AvenderLine.Infrastructure\AvenderLine.Infrastructure.csproj", "{B269562B-96D2-4EB7-97EC-793F975FB230}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvenderLine.API", "src\AvenderLine.API\AvenderLine.API.csproj", "{5D61DBE7-DD4E-4B00-9739-3889C3F950D1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{11BC7C2C-2972-4A1A-BDBD-79AA94C76DD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvenderLine.Tests", "tests\AvenderLine.Tests\AvenderLine.Tests.csproj", "{5DEDFC10-BC36-469C-8EC5-DDFCF8E59329}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80986988-5F67-4964-B726-4B856C56D698}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80986988-5F67-4964-B726-4B856C56D698}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80986988-5F67-4964-B726-4B856C56D698}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80986988-5F67-4964-B726-4B856C56D698}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F34618C5-8300-474A-A1E0-31AE97F0EA84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F34618C5-8300-474A-A1E0-31AE97F0EA84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F34618C5-8300-474A-A1E0-31AE97F0EA84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F34618C5-8300-474A-A1E0-31AE97F0EA84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B269562B-96D2-4EB7-97EC-793F975FB230}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B269562B-96D2-4EB7-97EC-793F975FB230}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B269562B-96D2-4EB7-97EC-793F975FB230}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B269562B-96D2-4EB7-97EC-793F975FB230}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D61DBE7-DD4E-4B00-9739-3889C3F950D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D61DBE7-DD4E-4B00-9739-3889C3F950D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D61DBE7-DD4E-4B00-9739-3889C3F950D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D61DBE7-DD4E-4B00-9739-3889C3F950D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DEDFC10-BC36-469C-8EC5-DDFCF8E59329}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DEDFC10-BC36-469C-8EC5-DDFCF8E59329}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DEDFC10-BC36-469C-8EC5-DDFCF8E59329}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DEDFC10-BC36-469C-8EC5-DDFCF8E59329}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{80986988-5F67-4964-B726-4B856C56D698} = {E4C778B7-FD1B-4DEA-BBC9-B11835E6D88F}
+		{F34618C5-8300-474A-A1E0-31AE97F0EA84} = {E4C778B7-FD1B-4DEA-BBC9-B11835E6D88F}
+		{B269562B-96D2-4EB7-97EC-793F975FB230} = {E4C778B7-FD1B-4DEA-BBC9-B11835E6D88F}
+		{5D61DBE7-DD4E-4B00-9739-3889C3F950D1} = {E4C778B7-FD1B-4DEA-BBC9-B11835E6D88F}
+		{5DEDFC10-BC36-469C-8EC5-DDFCF8E59329} = {11BC7C2C-2972-4A1A-BDBD-79AA94C76DD6}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #fdfbf7;
+    --foreground: #121212;
+    --accent: #c5a880;
+    --accent-hover: #b39265;
+    --accent-soft: #f6efe2;
+    --noir: #0d0d0d;
+    --card: #ffffff;
+    --muted: #6e6b66;
+    --border: #ede7dc;
+    --hairline: #e2dbcd;
+  }
+
+  * {
+    border-color: var(--border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    color: var(--foreground);
+    background-color: var(--background);
+    font-family: var(--font-sans), "Nunito Sans", system-ui, sans-serif;
+    line-height: 1.75;
+    text-align: start;
+    overflow-x: hidden;
+  }
+
+  /* Arabic & English text wrapping rules — prevents broken words and orphan drops */
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    line-height: 1.35;
+  }
+
+  p {
+    text-wrap: pretty;
+    word-break: normal;
+    overflow-wrap: break-word;
+  }
+
+  /* English typography enhancements */
+  body {
+    letter-spacing: 0.01em;
+  }
+
+  /* Remove ugly browser black focus outline on mouse click/drag while keeping keyboard accessibility */
+  button:focus:not(:focus-visible),
+  a:focus:not(:focus-visible),
+  input:focus:not(:focus-visible),
+  [tabindex]:focus:not(:focus-visible) {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+
+/* Crisp Montserrat for display headings (kamin.ae Prestige style) */
+.font-display {
+  font-family: var(--font-display), "Montserrat", sans-serif;
+}
+
+/* Subtle shimmer for images and skeletons */
+.shimmer {
+  background: linear-gradient(90deg, #f7f4ee 25%, #ede6db 50%, #f7f4ee 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.8s infinite ease-in-out;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Custom luxury scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f4ede3;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4c8b6;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #bfae96;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Eyebrow label — strictly for Latin headers */
+  .eyebrow {
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    font-size: 0.72rem;
+    font-weight: 500;
+  }
+
+  /* Luxury gold gradient text */
+  .gold-gradient {
+    background: linear-gradient(135deg, #d8bc91 0%, #b8925b 50%, #d8bc91 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Luxury glass effect with WebKit prefix for iOS Safari */
+  .glass-card {
+    background: rgba(255, 255, 255, 0.82);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(237, 231, 220, 0.8);
+  }
+
+  .dark-glass {
+    background: rgba(13, 13, 13, 0.85);
+    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+  }
+}
